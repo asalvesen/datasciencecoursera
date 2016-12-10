@@ -25,7 +25,7 @@ test_raw = read.csv("pml-testing.csv", na.strings = c("", "#DIV/0!", "NA"))
 ```
 
 ## Data Cleaning
-The first few columns do not contain diagnostic information. There are also some columns that are mostly NA's. Let's get rid of those for both the training and testing sets before we begin.
+The first few columns do not contain diagnostic information. There are also some columns that are mostly NAs. Let's get rid of those for both the training and testing sets before we begin.
 ```{r}
 ggplot(data = train_raw) +
         geom_point(aes(x = cvtd_timestamp, y = classe,
